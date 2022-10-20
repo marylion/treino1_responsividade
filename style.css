@@ -1,0 +1,50 @@
+body{
+    background-color: rgb(165, 117, 209);
+    padding: 15px;
+    font-family: monospace;
+}
+
+.caixa{
+    border: solid 5px black;
+    border-radius: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.area_visivel span {
+    color: rgb(195, 15, 15);
+    display: none;
+}
+
+/*Lagura máxima max-width*/
+@media screen and (max-width:600px) {
+    .um {
+        background: red;
+    }    
+    span.menor-600 {
+        display: inline-block;
+    }
+    
+}
+
+
+/*Lagura mínima min-width*/
+@media screen and (min-width:900px) {
+    .dois{
+        background: green;
+    }    
+    span.maior-900 {    /*Obs.: quando chamar a classe ela deve estar junto com a tag ex span.classe*/
+        display: inline-block;
+    }
+}
+
+
+/*Lagura mínima & máxima min-whidth & max-width*/
+@media screen and (min-width:600px) and (max-width:900px) {
+    .tres {
+        background: blue;
+    }    
+    span.entre-600-900 {
+        display: inline-block;
+    }
+}
